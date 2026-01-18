@@ -682,6 +682,40 @@ img {
   border-radius: 20px;
 }
 
+/* Unique Shadows for Project Cards */
+.proj-1 {
+  /* Calc - Yellow/Gold Glow */
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  border-color: #ffd700;
+}
+
+.proj-1:hover {
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+  border-color: #ffd700;
+}
+
+.proj-2 {
+  /* Study Buddy - Emerald/Green Glow */
+  box-shadow: 0 0 20px rgba(46, 204, 113, 0.3);
+  border-color: #2ecc71;
+}
+
+.proj-2:hover {
+  box-shadow: 0 0 40px rgba(46, 204, 113, 0.6);
+  border-color: #2ecc71;
+}
+
+.proj-3 {
+  /* Pro Task - Red/Pink Glow */
+  box-shadow: 0 0 20px rgba(255, 51, 85, 0.3);
+  border-color: #ff3355;
+}
+
+.proj-3:hover {
+  box-shadow: 0 0 40px rgba(255, 51, 85, 0.6);
+  border-color: #ff3355;
+}
+
 .project-img-container {
   height: 100%;
   /* Full height of card */
