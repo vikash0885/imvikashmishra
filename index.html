@@ -539,8 +539,8 @@
       track.style.transform = `translateX(-${index * 100}%)`;
     }
 
-    // Auto Slide every 3 seconds
-    let slideInterval = setInterval(nextSlide, 3000);
+    // Auto Slide every 1 second (per user request)
+    let slideInterval = setInterval(nextSlide, 1000);
 
     // Optional: Pause on hover
     const sliderContainer = document.querySelector('.slider-container');
@@ -549,7 +549,7 @@
     });
 
     sliderContainer.addEventListener('mouseleave', () => {
-      slideInterval = setInterval(nextSlide, 3000);
+      slideInterval = setInterval(nextSlide, 1000);
     });
   </script>
 </body>
