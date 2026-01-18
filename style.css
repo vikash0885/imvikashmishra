@@ -280,23 +280,31 @@ img {
   color: transparent;
   -webkit-text-stroke: 1px #fff;
   transition: all 0.4s ease;
-  /* smooth transition */
+
+
 }
 
-/* Hover Effect for "MISHRA" (Zoom + Color) */
+/* Hover Effect for "MISHRA" (Zoom + Mix Color) */
 .indented:hover {
   transform: scale(1.1);
-  color: var(--primary-accent);
-  -webkit-text-stroke: 1px var(--primary-accent);
-  text-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+  color: transparent;
+  background-image: linear-gradient(to right, #00ffff, #ff00ff, #bf00ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 0px;
+  /* Remove stroke to show gradient better */
+  text-shadow: 0 0 30px rgba(191, 0, 255, 0.6);
   cursor: pointer;
 }
 
-/* Hover Effect for "VIKASH" (Zoom + Color) */
+/* Hover Effect for "VIKASH" (Zoom + Mix Color) */
 .reveal-text:not(.indented):hover {
   transform: scale(1.1);
-  color: var(--primary-accent);
-  text-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+  color: transparent;
+  background-image: linear-gradient(to right, #00ffff, #ff00ff, #bf00ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(191, 0, 255, 0.6);
   cursor: pointer;
 }
 
