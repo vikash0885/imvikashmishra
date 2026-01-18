@@ -799,8 +799,8 @@ img {
   /* Increased height as per user request */
   flex-direction: column;
   /* Stack image and text vertically */
-  justify-content: space-between;
-  /* proper spacing */
+  justify-content: flex-start;
+  /* content flows from top */
 }
 
 .edu-image {
@@ -834,16 +834,13 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: auto;
-  /* Push to bottom */
-  margin-bottom: 20px;
-  /* Spacing from bottom edge */
+  margin-top: 30px;
+  /* Fixed spacing below image instead of auto-bottom */
 }
 
 .edu-icon {
-  font-size: 2rem;
-  color: var(--secondary-accent);
-  margin-top: 5px;
+  display: none;
+  /* Hide icon as image is now prominent */
 }
 
 .edu-details {
@@ -852,15 +849,30 @@ img {
 
 .edu-year {
   display: block;
-  font-family: monospace;
-  color: var(--text-dim);
-  margin-bottom: 10px;
+  font-family: var(--font-display);
+  /* Stylish font */
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: var(--secondary-accent);
+  margin-bottom: 5px;
+}
+
+.edu-details h3 {
+  font-family: var(--font-display);
+  /* Stylish font */
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #fff;
 }
 
 .edu-inst {
-  color: var(--text-dim);
+  font-family: var(--font-display);
+  /* Stylish font */
+  font-size: 1rem;
+  color: #ccc;
+  font-style: normal;
+  /* Remove italic */
   margin-top: 5px;
-  font-style: italic;
 }
 
 @media(max-width: 600px) {
