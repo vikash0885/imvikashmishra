@@ -815,8 +815,10 @@ img {
   border-radius: 50%;
   /* Make it circular like a logo/badge? Or keep separate? User didn't ask, but column layout looks better with centered or larger image. Let's keep rectangular but centered */
   overflow: hidden;
-  border: 1px solid var(--glass-border);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 3px solid #FFD700;
+  /* Gold border */
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  /* Golden glow */
   margin-top: 40px;
   /* Push image down a bit from top */
 }
