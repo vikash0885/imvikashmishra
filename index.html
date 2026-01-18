@@ -210,35 +210,52 @@
     <!-- Experience Section (New) -->
     <section class="experience-section" id="experience">
       <div class="section-header">PROFESSIONAL EXPERIENCE</div>
-      <div class="experience-grid">
-        <!-- Edunet -->
-        <div class="exp-card glass"
-          style="background-image: url('edunet-logo.jpg'); background-size: cover; background-position: center;">
-          <div class="skill-overlay"></div>
-          <div class="exp-date">Dec 2025 – Present</div>
-          <h3 class="exp-role">AI & ML Intern</h3>
-          <h4 class="exp-org">Edunet Foundation</h4>
-          <div class="exp-icon"><i class="fas fa-robot"></i></div>
-        </div>
 
-        <!-- EDC IIT Delhi -->
-        <div class="exp-card glass"
-          style="background-image: url('edc-bg.jpg'); background-size: cover; background-position: center;">
-          <div class="skill-overlay"></div> <!-- Reusing overlay for readability -->
-          <div class="exp-date">Dec 2025 – Present</div>
-          <h3 class="exp-role">Campus Ambassador</h3>
-          <h4 class="exp-org">EDC IIT Delhi</h4>
-          <div class="exp-icon"><i class="fas fa-bullhorn"></i></div>
-        </div>
+      <div class="slider-container">
+        <div class="slider-track">
 
-        <!-- Internshala -->
-        <div class="exp-card glass"
-          style="background-image: url('internshala-blue-logo.jpg'); background-size: cover; background-position: center;">
-          <div class="skill-overlay"></div>
-          <div class="exp-date">Oct 2025 – Dec 2025</div>
-          <h3 class="exp-role">Student Partner (ISP)</h3>
-          <h4 class="exp-org">Internshala</h4>
-          <div class="exp-icon"><i class="fas fa-handshake"></i></div>
+          <!-- Edunet -->
+          <div class="slide">
+            <div class="exp-card glass"
+              style="background-image: url('edunet-logo.jpg'); background-size: cover; background-position: center;">
+              <div class="skill-overlay"></div>
+              <div class="exp-icon"><i class="fas fa-robot"></i></div>
+            </div>
+            <div class="exp-details-below">
+              <div class="exp-date">Dec 2025 – Present</div>
+              <h3 class="exp-role">AI & ML Intern</h3>
+              <h4 class="exp-org">Edunet Foundation</h4>
+            </div>
+          </div>
+
+          <!-- EDC IIT Delhi -->
+          <div class="slide">
+            <div class="exp-card glass"
+              style="background-image: url('edc-bg.jpg'); background-size: cover; background-position: center;">
+              <div class="skill-overlay"></div>
+              <div class="exp-icon"><i class="fas fa-bullhorn"></i></div>
+            </div>
+            <div class="exp-details-below">
+              <div class="exp-date">Dec 2025 – Present</div>
+              <h3 class="exp-role">Campus Ambassador</h3>
+              <h4 class="exp-org">EDC IIT Delhi</h4>
+            </div>
+          </div>
+
+          <!-- Internshala -->
+          <div class="slide">
+            <div class="exp-card glass"
+              style="background-image: url('internshala-blue-logo.jpg'); background-size: cover; background-position: center;">
+              <div class="skill-overlay"></div>
+              <div class="exp-icon"><i class="fas fa-handshake"></i></div>
+            </div>
+            <div class="exp-details-below">
+              <div class="exp-date">Oct 2025 – Dec 2025</div>
+              <h3 class="exp-role">Student Partner (ISP)</h3>
+              <h4 class="exp-org">Internshala</h4>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -503,6 +520,36 @@
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       initParticles();
+    });
+
+    // Experience Slider Logic
+    const track = document.querySelector('.slider-track');
+    let slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    function nextSlide() {
+      index++;
+      if (index >= slides.length) {
+        index = 0;
+      }
+      updateSlide();
+    }
+
+    function updateSlide() {
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    // Auto Slide every 3 seconds
+    let slideInterval = setInterval(nextSlide, 3000);
+
+    // Optional: Pause on hover
+    const sliderContainer = document.querySelector('.slider-container');
+    sliderContainer.addEventListener('mouseenter', () => {
+      clearInterval(slideInterval);
+    });
+
+    sliderContainer.addEventListener('mouseleave', () => {
+      slideInterval = setInterval(nextSlide, 3000);
     });
   </script>
 </body>

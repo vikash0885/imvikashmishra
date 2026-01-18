@@ -751,21 +751,66 @@ img {
   position: relative;
 }
 
-.experience-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+/* Removed grid definition */
+
+.slider-container {
+  width: 100%;
+  max-width: 900px;
+  /* Constrain width for slider */
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  /* Will be dynamically adjusted by JS? Or simpler: fit-content */
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px;
+  /* Space between items if needed, or visual padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .exp-card {
-  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  /* Fixed height for image box */
+  padding: 0;
   position: relative;
   overflow: hidden;
+  border-radius: 20px;
   transition: transform 0.4s ease, border-color 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 350px;
+  /* Removed flex properties as text is now outside */
+}
+
+.exp-details-below {
+  margin-top: 25px;
+  text-align: center;
+  color: var(--text);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--secondary-accent);
 }
 
 .exp-card:hover {
