@@ -1308,9 +1308,12 @@ img {
 
 .submit-btn {
   padding: 15px 30px;
-  background: var(--primary-accent);
-  color: #000;
-  border: none;
+  background: #111;
+  /* Dark background for contrast */
+  color: #00ff00;
+  /* Green text as requested */
+  border: 1px solid #00ff00;
+  /* Matching border */
   border-radius: 10px;
   font-family: 'Syne', sans-serif;
   font-weight: 700;
