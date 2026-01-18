@@ -40,6 +40,12 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   position: relative;
+  width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Floating Glow Orbs styling added globally to body via pseudo-elements would be complex, 
@@ -808,6 +814,9 @@ img {
     flex-direction: column;
     text-align: center;
     padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
   }
 
   .hero-left {
@@ -885,8 +894,10 @@ img {
   }
 
   .profile-ring {
-    width: 280px;
-    height: 280px;
+    width: 70vw;
+    height: 70vw;
+    max-width: 280px;
+    max-height: 280px;
   }
 
   .lets-talk {
