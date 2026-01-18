@@ -1214,7 +1214,10 @@ img {
   font-size: 8rem;
   line-height: 0.8;
   font-weight: 800;
-  color: var(--text-main);
+  color: transparent;
+  background-image: linear-gradient(to right, #00ffff, #bf00ff);
+  -webkit-background-clip: text;
+  background-clip: text;
   margin-bottom: 20px;
 }
 
