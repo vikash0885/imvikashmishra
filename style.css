@@ -507,24 +507,63 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 15px;
-  /* Reduced gap and min-width */
+  gap: 30px;
+  justify-items: center;
+  /* Center circles in grid */
+}
+
+@keyframes cycleColors {
+  0% {
+    border-color: #ff0055;
+    box-shadow: 0 0 15px #ff0055;
+  }
+
+  20% {
+    border-color: #00e5ff;
+    box-shadow: 0 0 15px #00e5ff;
+  }
+
+  40% {
+    border-color: #f4d03f;
+    box-shadow: 0 0 15px #f4d03f;
+  }
+
+  60% {
+    border-color: #bf00ff;
+    box-shadow: 0 0 15px #bf00ff;
+  }
+
+  80% {
+    border-color: #00ff7f;
+    box-shadow: 0 0 15px #00ff7f;
+  }
+
+  100% {
+    border-color: #ff0055;
+    box-shadow: 0 0 15px #ff0055;
+  }
 }
 
 .skill-card {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  /* Make it circular */
   padding: 20px;
-  /* Reduced padding */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   position: relative;
   overflow: hidden;
   background-size: cover;
   background-position: center;
   z-index: 1;
-  min-height: 180px;
-  /* Force a smaller but consistent height */
-  justify-content: center;
+  /* Animation */
+  animation: cycleColors 5s linear infinite;
+  border-width: 2px;
+  border-style: solid;
 }
 
 /* Dark Overlay for readability on image backgrounds */
@@ -558,19 +597,9 @@ img {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Hide linear progress bar as it doesn't fit circle well */
 .skill-progress-bg {
-  width: 100%;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.2);
-  margin-top: 15px;
-  z-index: 2;
-  position: relative;
-}
-
-.skill-progress-bar {
-  height: 100%;
-  background: var(--secondary-accent);
-  box-shadow: 0 0 10px var(--secondary-accent);
+  display: none;
 }
 
 /* PROJECTS GRID */
