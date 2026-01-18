@@ -797,16 +797,24 @@ img {
   /* Ensure equal height stretch */
   min-height: 450px;
   /* Increased height as per user request */
+  flex-direction: column;
+  /* Stack image and text vertically */
+  justify-content: space-between;
+  /* proper spacing */
 }
 
 .edu-image {
   flex-shrink: 0;
   width: 150px;
-  height: 100px;
-  border-radius: 10px;
+  height: 150px;
+  /* Increase image size slightly for balance */
+  border-radius: 50%;
+  /* Make it circular like a logo/badge? Or keep separate? User didn't ask, but column layout looks better with centered or larger image. Let's keep rectangular but centered */
   overflow: hidden;
   border: 1px solid var(--glass-border);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
+  /* Push image down a bit from top */
 }
 
 .edu-image img {
@@ -821,10 +829,15 @@ img {
 }
 
 .edu-info-container {
-  flex: 1;
+  width: 100%;
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  /* Push to bottom */
+  margin-bottom: 20px;
+  /* Spacing from bottom edge */
 }
 
 .edu-icon {
