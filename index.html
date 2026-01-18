@@ -2,311 +2,126 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vikash Mishra VM | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIKASH MISHRA — PORTFOLIO</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Premium Fonts: Syne for headers, Inter for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@400;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
 </head>
 
 <body>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">VM</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#">Contact</a>
-    </nav>
-    <div class="nav-btns">
-      <button class="repo-btn">Visit Repo ↗</button>
-      <button class="theme-btn">🌙</button>
-    </div>
-  </header>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-left">
-      <h1 class="name">
-        <span class="normal">I'm </span>
-        <span class="animated">Vikash Mishra</span>
-      </h1>
+  <nav class="nav">
+    <a href="#" class="brand">VM.</a>
+    <div class="menu-text">MENU</div>
+  </nav>
 
-      <h3 class="typing">
-        <span class="tea">Full Stack Developer</span>
-      </h3>
-      </h3>
-      <p>
-      <p>
-        Computer Science student and AI/Generative AI enthusiast, passionate about creating innovative
-        and intelligent solutions at the forefront of technology.
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1 class="reveal-text">VIKASH</h1>
+        <h1 class="reveal-text indented">MISHRA</h1>
+      </div>
+      <p class="hero-sub reveal-delay">
+        MULTIDISCIPLINARY CREATIVE &<br>
+        FULL STACK DEVELOPER
       </p>
+      <div class="scroll-indicator">SCROLL</div>
+    </section>
 
+    <section class="manifesto">
+      <p class="large-statement">
+        I CRAFT DIGITAL EXPERIENCES THAT MERGE <span class="accent">ART</span> WITH <span class="accent">CODE</span>.
+        NO TEMPLATES. NO BOUNDARIES. JUST PURE INNOVATION.
       </p>
+    </section>
 
-      <div class="buttons">
-        <a href="https://github.com/imvikashmishra" class="btn primary github-btn" target="_blank">
-          <i class="fa-brands fa-github"></i> GitHub Profile
-        </a>
+    <section class="work-list">
+      <div class="section-header">SELECTED WORKS (2023—2026)</div>
 
-        <a href="#" class="btn secondary">Resume ⬇</a>
-      </div>
-    </div>
-
-    <div class="hero-right">
-      <div class="profile-ring">
-        <img src="profile.jpg" alt="Profile">
-      </div>
-      <div class="status">🟡 On summer break</div>
-    </div>
-  </section>
-
-  <section class="skills" id="skills">
-    <h2 class="section-title">Technical Expertise</h2>
-
-    <div class="skills-grid">
-      <!-- Frontend -->
-      <div class="skill-card glass" data-tilt>
-        <div class="skill-icon"><i class="fab fa-html5"></i></div>
-        <div class="skill-info">
-          <h3>HTML5</h3>
-          <div class="skill-progress-bg">
-            <div class="skill-progress-bar" style="width: 95%;"></div>
-          </div>
+      <div class="work-item">
+        <div class="work-info">
+          <span class="work-num">01</span>
+          <h2 class="work-title"><a href="https://web2.0calc.com/" target="_blank">CALC_2.0</a></h2>
+          <p class="work-cat">UI / JAVASCRIPT</p>
+        </div>
+        <div class="work-img">
+          <img src="Screenshot-2023-02-09-at-14.20.03.webp" alt="Calculator">
         </div>
       </div>
 
-      <div class="skill-card glass" data-tilt>
-        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-        <div class="skill-info">
-          <h3>CSS3</h3>
-          <div class="skill-progress-bg">
-            <div class="skill-progress-bar" style="width: 90%;"></div>
-          </div>
+      <div class="work-item">
+        <div class="work-info">
+          <span class="work-num">02</span>
+          <h2 class="work-title"><a href="https://study-buddyvm-uyfk.vercel.app/" target="_blank">STUDY_BUDDY</a></h2>
+          <p class="work-cat">PLATFORM / FLASK</p>
+        </div>
+        <div class="work-img">
+          <img src="studybuddy.png" alt="Study Buddy">
         </div>
       </div>
 
-      <div class="skill-card glass" data-tilt>
-        <div class="skill-icon"><i class="fab fa-js"></i></div>
-        <div class="skill-info">
-          <h3>JavaScript</h3>
-          <div class="skill-progress-bg">
-            <div class="skill-progress-bar" style="width: 88%;"></div>
-          </div>
+      <div class="work-item">
+        <div class="work-info">
+          <span class="work-num">03</span>
+          <h2 class="work-title">PRO_TASK</h2>
+          <p class="work-cat">SYSTEM / REACT</p>
+        </div>
+        <div class="work-img">
+          <img src="education.jpg" alt="Task App">
         </div>
       </div>
+    </section>
 
-      <div class="skill-card glass" data-tilt>
-        <div class="skill-icon"><i class="fab fa-react"></i></div>
-        <div class="skill-info">
-          <h3>React JS</h3>
-          <div class="skill-progress-bg">
-            <div class="skill-progress-bar" style="width: 75%;"></div>
-          </div>
+    <section class="expertise">
+      <div class="section-header">CAPABILITIES</div>
+      <div class="skill-list">
+        <div class="skill-row"><span>FRONTEND</span><span>REACT / GSAP / THREE.JS</span></div>
+        <div class="skill-row"><span>BACKEND</span><span>NODE / PYTHON / SQL</span></div>
+        <div class="skill-row"><span>DESIGN</span><span>FIGMA / BLENDER</span></div>
+      </div>
+    </section>
+
+    <section class="contact-footer">
+      <div class="footer-content">
+        <h2 class="lets-talk">LET'S<br>TALK</h2>
+        <a href="mailto:vikash@example.com" class="email-link">vikash@example.com ↗</a>
+
+        <div class="footer-links">
+          <a href="https://github.com/imvikashmishra">GITHUB</a>
+          <a href="#">LINKEDIN</a>
+          <a href="#">INSTAGRAM</a>
         </div>
       </div>
+    </section>
+  </main>
 
-      <!-- Backend & DB -->
-      <div class="skill-card glass" data-tilt>
-        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
-        <div class="skill-info">
-          <h3>Node.js + Express</h3>
-          <div class="skill-progress-bg">
-            <div class="skill-progress-bar" style="width: 82%;"></div>
-          </div>
-        </div>
-      </div>
+  <script>
+    // Simple Cursor Script (Placeholder for more complex logic)
+    const cursorDot = document.querySelector('.cursor-dot');
+    const cursorOutline = document.querySelector('.cursor-outline');
 
-      <div class="skill-card glass" data-tilt>
-        <div class="skill-icon"><i class="fab fa-python"></i></div>
-        <div class="skill-info">
-          <h3>Python (Flask/Django)</h3>
-          <div class="skill-progress-bg">
-            <div class="skill-progress-bar" style="width: 80%;"></div>
-          </div>
-        </div>
-      </div>
+    window.addEventListener('mousemove', function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
 
-      <div class="skill-card glass" data-tilt>
-        <div class="skill-icon"><i class="fas fa-database"></i></div>
-        <div class="skill-info">
-          <h3>MySQL</h3>
-          <div class="skill-progress-bg">
-            <div class="skill-progress-bar" style="width: 85%;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Projects Section -->
-  <section class="projects" id="projects">
-    <h2 class="section-title">Featured Projects</h2>
+      cursorDot.style.left = `${posX}px`;
+      cursorDot.style.top = `${posY}px`;
 
-    <div class="projects-grid">
-      <!-- Project 1 -->
-      <div class="project-card glass" data-tilt>
-        <div class="project-img-container">
-          <img src="Screenshot-2023-02-09-at-14.20.03.webp" alt="Calculator Project">
-          <div class="project-overlay">
-            <div class="overlay-links">
-              <a href="https://web2.0calc.com/" target="_blank" class="overlay-btn"><i
-                  class="fas fa-external-link-alt"></i></a>
-              <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="project-details">
-          <div class="project-tags">
-            <span class="tag">Frontend</span>
-            <span class="tag">JavaScript</span>
-          </div>
-          <h3>Calculator App</h3>
-          <p>A high-performance calculator with a sleek UI, supporting complex operations and real-time computation.</p>
-          <a href="https://web2.0calc.com/" class="project-link">View Project <span>→</span></a>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card glass" data-tilt>
-        <div class="project-img-container">
-          <img src="studybuddy.png" alt="Study Buddy Project">
-          <div class="project-overlay">
-            <div class="overlay-links">
-              <a href="https://study-buddyvm-uyfk.vercel.app/" target="_blank" class="overlay-btn"><i
-                  class="fas fa-external-link-alt"></i></a>
-              <a href="https://github.com/imvikashmishra/-study-buddyvm.git" target="_blank" class="overlay-btn"><i
-                  class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="project-details">
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Flask</span>
-          </div>
-          <h3>Study Buddy</h3>
-          <p>A collaborative learning platform helping students connect and share resources for efficient studying.</p>
-          <a href="https://study-buddyvm-uyfk.vercel.app/" target="_blank" class="project-link">View Project
-            <span>→</span></a>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project-card glass" data-tilt>
-        <div class="project-img-container">
-          <img src="education.jpg" alt="Todo App">
-          <div class="project-overlay">
-            <div class="overlay-links">
-              <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
-              <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="project-details">
-          <div class="project-tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">UI/UX</span>
-          </div>
-          <h3>Task Stream</h3>
-          <p>A modern task management system featuring drag-and-drop, category filtering, and local persistence.</p>
-          <a href="#" class="project-link">View Project <span>→</span></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section class="education-section" id="education">
-    <h2 class="section-title">Academic Journey</h2>
-    <div class="education-grid">
-      <!-- Graduation -->
-      <div class="edu-card glass" data-tilt>
-        <div class="edu-image">
-          <img src="Sunder-Deep-Engineering-College-Ghaziabad-Campus (1).webp" alt="Sunder Deep Group of Institutions">
-        </div>
-        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
-        <div class="edu-details">
-          <span class="edu-year">2024 – 2027</span>
-          <h3>Bachelor of Computer Application (BCA)</h3>
-          <p class="edu-inst">Sunder Deep Group of Institutions</p>
-          <p class="edu-desc">Pursuing computer applications with a focus on software development, database management,
-            and modern web technologies at Sunder Deep Engineering College, Ghaziabad.</p>
-        </div>
-      </div>
-
-      <!-- High School -->
-      <div class="edu-card glass" data-tilt>
-        <div class="edu-icon"><i class="fas fa-school"></i></div>
-        <div class="edu-details">
-          <span class="edu-year">2022 – 2024</span>
-          <h3>Higher Secondary (12th)</h3>
-          <p class="edu-inst">Science Stream</p>
-          <p class="edu-desc">Excelled in Mathematics and Physics, building a solid analytical foundation for
-            engineering.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="experience">
-    <h3>Experience</h3>
-
-    <div class="exp-item">
-      <h4>Web Development Intern</h4>
-      <span>2024 – Present</span>
-      <p>
-        Worked on building responsive websites using HTML, CSS and JavaScript.
-        Learned real-world project structure and UI/UX best practices.
-      </p>
-      <img src="OIP.jpg">
-    </div>
-
-    <div class="exp-item">
-      <h4>Personal Projects & Practice</h4>
-      <span>2023 – 2024</span>
-      <p>
-        Developed multiple projects like portfolio website, calculator app
-        and todo app while improving problem-solving skills.
-      </p>
-    </div>
-  </div>
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2 class="section-title">Contact Me</h2>
-
-    <div class="contact-container">
-
-      <!-- Left Info -->
-      <div class="contact-info">
-        <h3>Let’s Connect</h3>
-        <p>
-          Have a project, idea, or just want to say hello?
-          Feel free to reach out to me.
-        </p>
-
-        <div class="contact-details">
-          <p>📧 Email: <span>vikash@example.com</span></p>
-          <p>📍 Location: India</p>
-          <p>💼 GitHub: <a href="https://github.com/imvikashmishra" target="_blank">imvikashmishra</a></p>
-        </div>
-      </div>
-
-      <!-- Right Form -->
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message 🚀</button>
-      </form>
-
-    </div>
-  </section>
-
-
-
+      // Delayed follow
+      cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+      }, { duration: 500, fill: "forwards" });
+    });
+  </script>
 </body>
 
 </html>
