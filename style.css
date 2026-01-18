@@ -808,25 +808,23 @@ img {
   height: 100%;
   /* Ensure equal height stretch */
   /* Ensure equal height stretch */
-  height: 100%;
-  min-height: 400px;
-  /* Reduced height as per user request */
+  height: auto;
+  min-height: 350px;
+  /* Reduced height to fit image better */
   flex-direction: column;
   /* Stack image and text vertically */
-  /* Ensure equal height stretch */
-  height: 100%;
-  min-height: 400px;
-  /* Reduced height as per user request */
-  flex-direction: column;
-  /* Stack image and text vertically */
-  justify-content: flex-start;
-  /* content flows from top */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  /* Added shadow as requested */
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  /* Subtle glass border */
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  /* Brighter top border */
+  justify-content: center;
+  /* Center content */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  /* Stronger shadow */
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  /* Full visible border */
+  border-radius: 30px;
+  /* Smooth corners */
+  overflow: hidden;
+  /* smooth clipping */
+  background-repeat: no-repeat;
+  /* prevent tiling */
 }
 
 .edu-image {
