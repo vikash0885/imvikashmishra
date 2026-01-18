@@ -1264,10 +1264,15 @@ img {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: rgba(255, 255, 255, 0.03);
+  background-image: url('form-bg.jpg');
+  /* User requested background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 40px;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
 }
 
