@@ -795,6 +795,8 @@ img {
   /* allow wrapping on mobile */
   height: 100%;
   /* Ensure equal height stretch */
+  min-height: 450px;
+  /* Increased height as per user request */
 }
 
 .edu-image {
