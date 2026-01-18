@@ -787,6 +787,8 @@ img {
 
 .edu-card {
   padding: 30px;
+  border-radius: 50px;
+  /* Circular corners */
   display: flex;
   align-items: center;
   /* Center align items vertically */
@@ -918,7 +920,7 @@ img {
   padding: 0;
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 50px;
   transition: transform 0.4s ease, border-color 0.3s;
   background-color: #000;
   /* Default background */
