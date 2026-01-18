@@ -208,7 +208,7 @@ nav a:hover {
   height: 320px;
   border-radius: 50%;
   padding: 15px;
-  background: conic-gradient(#ff0000 0% 70%, #ffffff 70% 100%);
+  background: linear-gradient(45deg, var(--secondary-accent), transparent, var(--accent-color));
   animation: rotate 10s linear infinite;
   display: flex;
   align-items: center;
