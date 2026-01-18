@@ -39,13 +39,13 @@
         <h1 class="reveal-text">VIKASH</h1>
         <h1 class="reveal-text indented">MISHRA</h1>
 
-        <h3 class="typing">
-          <span class="tea">Full Stack Developer</span>
+        <h3 class="typing-container">
+          I am a <span class="typing-text"></span><span class="cursor">|</span>
         </h3>
 
         <p class="hero-desc">
           I CRAFT DIGITAL EXPERIENCES THAT MERGE <span class="accent">ART</span> WITH <span class="accent">CODE</span>.
-          Computer Science student and AI enthusiast.
+          Passionate about AI and Generative Tech.
         </p>
 
         <div class="buttons">
@@ -224,6 +224,41 @@
         top: `${posY}px`
       }, { duration: 500, fill: "forwards" });
     });
+
+    // Typing Animation Script
+    const textElement = document.querySelector('.typing-text');
+    const phrases = ["Full Stack Developer", "AI Enthusiast", "Creative Coder"];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+
+    function type() {
+      const currentPhrase = phrases[phraseIndex];
+
+      if (isDeleting) {
+        textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 50;
+      } else {
+        textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+        typeSpeed = 100;
+      }
+
+      if (!isDeleting && charIndex === currentPhrase.length) {
+        isDeleting = true;
+        typeSpeed = 2000;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        typeSpeed = 500;
+      }
+
+      setTimeout(type, typeSpeed);
+    }
+
+    document.addEventListener('DOMContentLoaded', type);
   </script>
 </body>
 

@@ -204,14 +204,38 @@ img {
   -webkit-text-stroke: 1px #fff;
 }
 
-.typing {
-  font-size: 1.5rem;
-  margin: 30px 0;
-  font-family: 'Montserrat', sans-serif;
+.typing-container {
+  font-size: 1.8rem;
+  margin: 20px 0;
+  font-family: 'Share Tech Mono', monospace;
+  /* Tech feel */
+  color: var(--secondary-accent);
+  min-height: 1.8rem;
 }
 
-.tea {
+.typing-text {
   color: var(--secondary-accent);
+  text-shadow: 0 0 5px var(--accent);
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: var(--accent);
+  animation: blink 1s infinite;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero-desc {
