@@ -163,11 +163,40 @@ img {
   margin: 0 20px;
   font-size: 0.9rem;
   transition: color 0.3s;
+  position: relative;
 }
 
-.nav-links a:hover {
-  color: var(--secondary-accent);
+/* Unique Colors per Link */
+.nav-item-1:hover {
+  color: #ff0055;
+  text-shadow: 0 0 10px #ff0055;
 }
+
+/* About - Pink/Red */
+.nav-item-2:hover {
+  color: #00e5ff;
+  text-shadow: 0 0 10px #00e5ff;
+}
+
+/* Work - Cyan */
+.nav-item-3:hover {
+  color: #f4d03f;
+  text-shadow: 0 0 10px #f4d03f;
+}
+
+/* Skills - Yellow */
+.nav-item-4:hover {
+  color: #bf00ff;
+  text-shadow: 0 0 10px #bf00ff;
+}
+
+/* Experience - Purple */
+.nav-item-5:hover {
+  color: #00ff7f;
+  text-shadow: 0 0 10px #00ff7f;
+}
+
+/* Contact - Green */
 
 .repo-btn {
   padding: 8px 20px;
