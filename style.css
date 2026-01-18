@@ -7,20 +7,20 @@
 }
 
 :root {
-  --bg-color: #e0f2fe;
-  /* Light Blue Background */
-  --card-bg: rgba(255, 255, 255, 0.45);
-  /* White Glass */
-  --primary-glow: rgba(77, 166, 255, 0.4);
-  --accent-color: #6c63ff;
-  /* Deep Purple/Blue Accent */
-  --secondary-accent: #0070f3;
-  /* Bright Blue */
-  --text-main: #1b1b25;
-  /* Dark Text */
-  --text-dim: #4a4a5e;
-  /* Dim Text (Darker for contrast) */
-  --glass-border: rgba(255, 255, 255, 0.6);
+  --bg-color: #0a192f;
+  /* Dark Navy Background */
+  --card-bg: rgba(17, 34, 64, 0.7);
+  /* Dark Glass */
+  --primary-glow: rgba(100, 255, 218, 0.1);
+  --accent-color: #64ffda;
+  /* Teal/Green Accent for contrast on dark */
+  --secondary-accent: #8892b0;
+  /* Slate Blue */
+  --text-main: #e6f1ff;
+  /* Lightest Slate */
+  --text-dim: #a8b2d1;
+  /* Slate */
+  --glass-border: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -30,7 +30,7 @@ body {
   line-height: 1.6;
 
   /* Scrolling Dots Animation */
-  background-image: radial-gradient(#4da6ff 2px, transparent 2px);
+  background-image: radial-gradient(rgba(100, 255, 218, 0.1) 2px, transparent 2px);
   background-size: 40px 40px;
   animation: scrollDots 10s linear infinite;
 }
@@ -129,7 +129,7 @@ nav a:hover {
 }
 
 .name .animated {
-  background: linear-gradient(90deg, #8b7cff, #4da6ff);
+  background: linear-gradient(90deg, var(--accent-color), var(--secondary-accent));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -141,8 +141,8 @@ nav a:hover {
 }
 
 .typing .tea {
-  color: var(--secondary-accent);
-  text-shadow: 0 0 10px rgba(77, 166, 255, 0.5);
+  color: var(--accent-color);
+  text-shadow: 0 0 10px var(--primary-glow);
   animation: teaWave 3s ease-in-out infinite;
   display: inline-block;
 }
@@ -181,8 +181,8 @@ nav a:hover {
 
 .primary {
   background: var(--accent-color);
-  color: #fff;
-  box-shadow: 0 10px 20px rgba(139, 124, 255, 0.3);
+  color: var(--bg-color);
+  box-shadow: 0 10px 20px rgba(100, 255, 218, 0.2);
 }
 
 .secondary {
@@ -192,7 +192,7 @@ nav a:hover {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(139, 124, 255, 0.4);
+  box-shadow: 0 15px 30px rgba(100, 255, 218, 0.3);
 }
 
 .hero-right {
@@ -208,7 +208,7 @@ nav a:hover {
   height: 320px;
   border-radius: 50%;
   padding: 15px;
-  background: linear-gradient(45deg, #8b7cff, transparent, #4da6ff);
+  background: linear-gradient(45deg, var(--secondary-accent), transparent, var(--accent-color));
   animation: rotate 10s linear infinite;
   display: flex;
   align-items: center;
@@ -523,7 +523,7 @@ nav a:hover {
 
 .edu-icon {
   font-size: 35px;
-  background: linear-gradient(135deg, #8b7cff, #4da6ff);
+  background: linear-gradient(135deg, var(--accent-color), var(--secondary-accent));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
