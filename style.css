@@ -27,14 +27,14 @@
 }
 
 body {
-  background-color: var(--bg);
-  /* Unique Animated Background */
-  background-image:
-    linear-gradient(rgba(43, 0, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(43, 0, 255, 0.05) 1px, transparent 1px),
-    radial-gradient(circle at 50% 50%, rgba(20, 20, 30, 0), #0a1018 90%);
-  background-size: 50px 50px, 50px 50px, 100% 100%;
-  animation: moveGrid 20s linear infinite;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  background: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)), url('experience-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-body);
   overflow-x: hidden;
@@ -688,11 +688,7 @@ img {
 /* EXPERIENCE GRID */
 .experience-section {
   padding: 100px 60px;
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('experience-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  /* Parallax effect */
+  /* Global background applies */
   position: relative;
 }
 
