@@ -810,12 +810,41 @@ img {
 
 .exp-card:hover {
   transform: translateY(-5px);
-  border-color: var(--secondary-accent);
+  /* Default hover fallback */
 }
 
-.exp-card:hover {
-  transform: translateY(-10px);
-  border-color: var(--secondary-accent);
+/* Unique Shadows for Experience Cards */
+.exp-1 {
+  /* Edunet - Cyan/Teal Glow */
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+  border-color: #00e5ff;
+}
+
+.exp-1:hover {
+  box-shadow: 0 0 40px rgba(0, 229, 255, 0.6);
+  border-color: #00e5ff;
+}
+
+.exp-2 {
+  /* EDC - Purple/Pink Glow */
+  box-shadow: 0 0 20px rgba(191, 0, 255, 0.3);
+  border-color: #bf00ff;
+}
+
+.exp-2:hover {
+  box-shadow: 0 0 40px rgba(191, 0, 255, 0.6);
+  border-color: #bf00ff;
+}
+
+.exp-3 {
+  /* Internshala - Blue Glow */
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.3);
+  border-color: #0066ff;
+}
+
+.exp-3:hover {
+  box-shadow: 0 0 40px rgba(0, 102, 255, 0.6);
+  border-color: #0066ff;
 }
 
 /* Stylish Typography */
