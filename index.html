@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VIKASH MISHRA — PORTFOLIO</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Premium Fonts: Syne for headers, Inter for body -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@400;700;800&display=swap"
+  <!-- Combined Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;700;800&family=Montserrat:wght@600;700&display=swap"
     rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,78 +18,185 @@
   <div class="cursor-dot"></div>
   <div class="cursor-outline"></div>
 
-  <nav class="nav">
+  <!-- Hybrid Navbar: Modern Layout + Buttons -->
+  <nav class="nav glass-nav">
     <a href="#" class="brand">VM.</a>
-    <div class="menu-text">MENU</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-btns">
+      <button class="repo-btn">Visit Repo ↗</button>
+    </div>
   </nav>
 
   <main>
-    <section class="hero">
-      <div class="hero-text">
+    <!-- Mixed Hero: Massive Text + Profile Ring -->
+    <section class="hero" id="about">
+      <div class="hero-left">
         <h1 class="reveal-text">VIKASH</h1>
         <h1 class="reveal-text indented">MISHRA</h1>
+
+        <h3 class="typing">
+          <span class="tea">Full Stack Developer</span>
+        </h3>
+
+        <p class="hero-desc">
+          I CRAFT DIGITAL EXPERIENCES THAT MERGE <span class="accent">ART</span> WITH <span class="accent">CODE</span>.
+          Computer Science student and AI enthusiast.
+        </p>
+
+        <div class="buttons">
+          <a href="https://github.com/imvikashmishra" class="btn primary" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="#" class="btn secondary">Resume ⬇</a>
+        </div>
       </div>
-      <p class="hero-sub reveal-delay">
-        MULTIDISCIPLINARY CREATIVE &<br>
-        FULL STACK DEVELOPER
-      </p>
+
+      <div class="hero-right">
+        <!-- Restored Profile Ring with Modern Twist -->
+        <div class="profile-ring">
+          <img src="profile.jpg" alt="Profile">
+        </div>
+        <div class="status glass">🟡 On summer break</div>
+      </div>
+
       <div class="scroll-indicator">SCROLL</div>
     </section>
 
-    <section class="manifesto">
-      <p class="large-statement">
-        I CRAFT DIGITAL EXPERIENCES THAT MERGE <span class="accent">ART</span> WITH <span class="accent">CODE</span>.
-        NO TEMPLATES. NO BOUNDARIES. JUST PURE INNOVATION.
-      </p>
-    </section>
-
-    <section class="work-list">
-      <div class="section-header">SELECTED WORKS (2023—2026)</div>
-
-      <div class="work-item">
-        <div class="work-info">
-          <span class="work-num">01</span>
-          <h2 class="work-title"><a href="https://web2.0calc.com/" target="_blank">CALC_2.0</a></h2>
-          <p class="work-cat">UI / JAVASCRIPT</p>
-        </div>
-        <div class="work-img">
-          <img src="Screenshot-2023-02-09-at-14.20.03.webp" alt="Calculator">
-        </div>
-      </div>
-
-      <div class="work-item">
-        <div class="work-info">
-          <span class="work-num">02</span>
-          <h2 class="work-title"><a href="https://study-buddyvm-uyfk.vercel.app/" target="_blank">STUDY_BUDDY</a></h2>
-          <p class="work-cat">PLATFORM / FLASK</p>
-        </div>
-        <div class="work-img">
-          <img src="studybuddy.png" alt="Study Buddy">
-        </div>
-      </div>
-
-      <div class="work-item">
-        <div class="work-info">
-          <span class="work-num">03</span>
-          <h2 class="work-title">PRO_TASK</h2>
-          <p class="work-cat">SYSTEM / REACT</p>
-        </div>
-        <div class="work-img">
-          <img src="education.jpg" alt="Task App">
-        </div>
-      </div>
-    </section>
-
-    <section class="expertise">
+    <!-- Restored Skills Grid with Hybrid Styling -->
+    <section class="skills" id="skills">
       <div class="section-header">CAPABILITIES</div>
-      <div class="skill-list">
-        <div class="skill-row"><span>FRONTEND</span><span>REACT / GSAP / THREE.JS</span></div>
-        <div class="skill-row"><span>BACKEND</span><span>NODE / PYTHON / SQL</span></div>
-        <div class="skill-row"><span>DESIGN</span><span>FIGMA / BLENDER</span></div>
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <h3>HTML5</h3>
+          <div class="skill-progress-bg">
+            <div class="skill-progress-bar" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <h3>CSS3</h3>
+          <div class="skill-progress-bg">
+            <div class="skill-progress-bar" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <div class="skill-progress-bg">
+            <div class="skill-progress-bar" style="width: 88%;"></div>
+          </div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <h3>React JS</h3>
+          <div class="skill-progress-bg">
+            <div class="skill-progress-bar" style="width: 75%;"></div>
+          </div>
+        </div>
+        <!-- Backend -->
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+          <h3>Node.js</h3>
+          <div class="skill-progress-bg">
+            <div class="skill-progress-bar" style="width: 82%;"></div>
+          </div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fab fa-python"></i></div>
+          <h3>Python</h3>
+          <div class="skill-progress-bg">
+            <div class="skill-progress-bar" style="width: 80%;"></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="contact-footer">
+    <!-- Projects Grid (Restored Structure, Modern Style) -->
+    <section class="projects" id="projects">
+      <div class="section-header">SELECTED WORKS</div>
+
+      <div class="projects-grid">
+        <div class="project-card glass">
+          <div class="project-img-container">
+            <img src="Screenshot-2023-02-09-at-14.20.03.webp" alt="Calculator">
+            <div class="project-overlay">
+              <div class="overlay-links">
+                <a href="https://web2.0calc.com/" target="_blank" class="overlay-btn"><i
+                    class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <div class="project-tags"><span class="tag">UI</span><span class="tag">JS</span></div>
+            <h2 class="work-title">CALC_2.0</h2>
+            <p>High-performance calculator with sleek UI/UX.</p>
+            <a href="https://web2.0calc.com/" class="project-link">VIEW PROJECT →</a>
+          </div>
+        </div>
+
+        <div class="project-card glass">
+          <div class="project-img-container">
+            <img src="studybuddy.png" alt="Study Buddy">
+            <div class="project-overlay">
+              <div class="overlay-links">
+                <a href="https://study-buddyvm-uyfk.vercel.app/" target="_blank" class="overlay-btn"><i
+                    class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <div class="project-tags"><span class="tag">FLASK</span><span class="tag">PYTHON</span></div>
+            <h2 class="work-title">STUDY_BUDDY</h2>
+            <p>Collaborative learning platform for students.</p>
+            <a href="https://study-buddyvm-uyfk.vercel.app/" class="project-link">VIEW PROJECT →</a>
+          </div>
+        </div>
+
+        <div class="project-card glass">
+          <div class="project-img-container">
+            <img src="education.jpg" alt="Task Stream">
+          </div>
+          <div class="project-details">
+            <div class="project-tags"><span class="tag">REACT</span><span class="tag">SYSTEM</span></div>
+            <h2 class="work-title">PRO_TASK</h2>
+            <p>Modern task management system with drag & drop.</p>
+            <a href="#" class="project-link">VIEW PROJECT →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education (Restored) -->
+    <section class="education-section">
+      <div class="section-header">ACADEMIC JOURNEY</div>
+      <div class="education-grid">
+        <div class="edu-card glass">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-details">
+            <span class="edu-year">2024 – 2027</span>
+            <h3>BCA (Bachelor of Computer Application)</h3>
+            <p class="edu-inst">Sunder Deep Group of Institutions</p>
+          </div>
+        </div>
+        <div class="edu-card glass">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-details">
+            <span class="edu-year">2022 – 2024</span>
+            <h3>Higher Secondary (12th)</h3>
+            <p class="edu-inst">Science Stream</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-footer" id="contact">
       <div class="footer-content">
         <h2 class="lets-talk">LET'S<br>TALK</h2>
         <a href="mailto:vikash@example.com" class="email-link">vikash@example.com ↗</a>
@@ -104,18 +211,14 @@
   </main>
 
   <script>
-    // Simple Cursor Script (Placeholder for more complex logic)
     const cursorDot = document.querySelector('.cursor-dot');
     const cursorOutline = document.querySelector('.cursor-outline');
 
     window.addEventListener('mousemove', function (e) {
       const posX = e.clientX;
       const posY = e.clientY;
-
       cursorDot.style.left = `${posX}px`;
       cursorDot.style.top = `${posY}px`;
-
-      // Delayed follow
       cursorOutline.animate({
         left: `${posX}px`,
         top: `${posY}px`
