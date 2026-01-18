@@ -279,6 +279,22 @@ img {
   margin-left: 5vw;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
+  transition: all 0.4s ease;
+  /* smooth transition */
+}
+
+/* Hover Effect for Name (Zoom + Color) */
+.hero-title:hover {
+  transform: scale(1.05);
+  /* Slight zoom */
+}
+
+.hero-title:hover .indented {
+  color: var(--primary-accent);
+  /* Change to electric blue */
+  -webkit-text-stroke: 1px var(--primary-accent);
+  text-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+  /* Glow effect */
 }
 
 .typing-container {
