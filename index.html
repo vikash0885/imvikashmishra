@@ -16,7 +16,10 @@
 <body>
 
   <div class="cursor-dot"></div>
+  <div class="cursor-dot"></div>
   <div class="cursor-outline"></div>
+
+  <canvas id="particles-canvas"></canvas>
 
   <!-- Hybrid Navbar: Modern Layout + Buttons -->
   <nav class="nav glass-nav">
@@ -440,6 +443,67 @@
         icon.classList.remove('fa-times');
         icon.classList.add('fa-bars');
       });
+    });
+
+    // Particles Animation
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let particlesArray;
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2 + 1; // Size of particles
+        this.speedX = Math.random() * 0.5 - 0.25; // Slower speed
+        this.speedY = Math.random() * 0.5 - 0.25;
+        this.color = 'rgba(100, 255, 218, 0.5)'; // Tealish color
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+
+        if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
+        if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
+      }
+      draw() {
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.fill();
+        // Optional: Glow
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = this.color;
+      }
+    }
+
+    function initParticles() {
+      particlesArray = [];
+      for (let i = 0; i < 50; i++) { // Number of particles
+        particlesArray.push(new Particle());
+      }
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particlesArray.length; i++) {
+        particlesArray[i].update();
+        particlesArray[i].draw();
+      }
+      requestAnimationFrame(animateParticles);
+    }
+
+    initParticles();
+    animateParticles();
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      initParticles();
     });
   </script>
 </body>

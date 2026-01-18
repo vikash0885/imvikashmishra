@@ -16,6 +16,9 @@
   /* Glassmorphism Variables */
   --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.05);
+
+  /* Particle Colors */
+  --particle-color: rgba(100, 255, 218, 0.3);
 }
 
 * {
@@ -30,9 +33,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--bg-color);
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('site-bg.png');
-  background-size: cover;
+  background-color: #050505;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
   background-position: center;
   background-attachment: fixed;
   color: var(--text);
@@ -157,6 +161,19 @@ img {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+
+/* PARTICLES CANVAS */
+#particles-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Behind content */
+  pointer-events: none;
 }
 
 .brand {
