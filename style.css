@@ -795,8 +795,10 @@ img {
   /* allow wrapping on mobile */
   height: 100%;
   /* Ensure equal height stretch */
-  min-height: 550px;
-  /* Further increased height */
+  height: 100%;
+  /* Ensure equal height stretch */
+  min-height: 400px;
+  /* Reduced height as per user request */
   flex-direction: column;
   /* Stack image and text vertically */
   justify-content: flex-start;
