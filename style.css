@@ -31,7 +31,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: var(--bg-color);
-  background: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)), url('experience-bg.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('site-bg.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -740,6 +740,7 @@ img {
   margin-top: 10px;
   background: linear-gradient(90deg, #fff, #aaa);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
