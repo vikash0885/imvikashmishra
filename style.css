@@ -795,14 +795,16 @@ img {
   /* allow wrapping on mobile */
   height: 100%;
   /* Ensure equal height stretch */
-  height: 100%;
   /* Ensure equal height stretch */
+  height: 100%;
   min-height: 400px;
   /* Reduced height as per user request */
   flex-direction: column;
   /* Stack image and text vertically */
   justify-content: flex-start;
   /* content flows from top */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  /* Added shadow as requested */
 }
 
 .edu-image {
