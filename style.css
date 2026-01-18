@@ -1202,6 +1202,13 @@ img {
   justify-content: space-between;
 }
 
+/* Align "GET IN TOUCH" to the left */
+.contact-section .section-header {
+  text-align: left;
+  margin-left: 0;
+  width: 100%;
+}
+
 .lets-talk {
   font-family: 'Syne', sans-serif;
   font-size: 8rem;
