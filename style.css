@@ -780,9 +780,13 @@ img {
 /* EDUCATION GRID */
 .education-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* Split into two equal parts */
+  grid-template-columns: 1fr;
+  /* Stack vertically as requested */
   gap: 30px;
+  max-width: 800px;
+  /* Constrain width so they don't look too stretched */
+  margin: 0 auto;
+  /* Center the grid */
 }
 
 .edu-card {
