@@ -787,8 +787,6 @@ img {
 
 .edu-card {
   padding: 30px;
-  border-radius: 50px;
-  /* Circular corners */
   display: flex;
   align-items: center;
   /* Center align items vertically */
@@ -797,8 +795,8 @@ img {
   /* allow wrapping on mobile */
   height: 100%;
   /* Ensure equal height stretch */
-  min-height: 450px;
-  /* Increased height as per user request */
+  min-height: 550px;
+  /* Further increased height */
   flex-direction: column;
   /* Stack image and text vertically */
   justify-content: flex-start;
@@ -920,7 +918,7 @@ img {
   padding: 0;
   position: relative;
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: 20px;
   transition: transform 0.4s ease, border-color 0.3s;
   background-color: #000;
   /* Default background */
