@@ -208,7 +208,7 @@ nav a:hover {
   height: 320px;
   border-radius: 50%;
   padding: 15px;
-  background: linear-gradient(45deg, #ff0000, transparent, #ff4d4d);
+  background: linear-gradient(45deg, #ff0000, transparent, #00ff00);
   animation: rotate 10s linear infinite;
   display: flex;
   align-items: center;
