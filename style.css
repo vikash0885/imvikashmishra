@@ -292,6 +292,24 @@ img {
   line-height: 1.6;
 }
 
+.stylish-bio {
+  font-family: 'Playfair Display', serif;
+  /* Stylish Serif Font */
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--text);
+  margin-top: 30px;
+  /* Space from buttons above */
+  border-left: 2px solid var(--secondary-accent);
+  padding-left: 20px;
+}
+
+.stylish-bio .accent {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .accent {
   color: var(--accent);
   font-style: italic;
