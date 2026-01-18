@@ -133,6 +133,24 @@ img {
   z-index: 100;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--glass-border);
+  /* Added Shadow and Animation */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  /* Stronger shadow */
+  animation: slideDown 1s ease-out forwards;
+  background: rgba(10, 16, 24, 0.7);
+  /* Slightly darker for contrast */
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .brand {
