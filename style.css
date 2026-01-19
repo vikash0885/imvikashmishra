@@ -1387,3 +1387,26 @@ img {
     font-size: 5rem;
   }
 }
+
+@media (max-width: 480px) {
+  .lets-talk {
+    font-size: 3.5rem;
+    /* Smaller for mobile to prevent cut-off */
+  }
+
+  .email-link {
+    font-size: 1.5rem;
+    /* Reduced size */
+    word-break: break-all;
+    /* Ensure long email wraps */
+  }
+
+  .contact-section {
+    padding: 60px 20px;
+    /* Reduced padding */
+  }
+
+  .contact-form {
+    padding: 30px 20px;
+  }
+}
