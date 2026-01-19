@@ -310,11 +310,29 @@ img {
 
 .typing-container {
   font-size: 1.8rem;
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
   font-family: 'Share Tech Mono', monospace;
   /* Tech feel */
   color: var(--secondary-accent);
   min-height: 1.8rem;
+}
+
+.hero-badge {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  border: 1px solid var(--glass-border);
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(5px);
+}
+
+.hero-badge i {
+  color: var(--secondary-accent);
+  margin-right: 10px;
 }
 
 .typing-text {
