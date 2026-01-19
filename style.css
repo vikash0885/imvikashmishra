@@ -1203,8 +1203,18 @@ img {
   }
 
   .lets-talk {
-    font-size: 4rem;
+    font-size: 5rem;
   }
+}
+
+.text-mix-gradient {
+  color: transparent !important;
+  background-image: linear-gradient(to right, #00ffff, #ff00ff, #bf00ff) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-stroke: 0px !important;
+  text-shadow: 0 0 30px rgba(191, 0, 255, 0.4) !important;
+  font-weight: 800 !important;
 }
 
 /* CONTACT SECTION */
