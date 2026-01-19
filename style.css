@@ -826,22 +826,31 @@ img {
 }
 
 .edu-card {
-  width: 100%;
-  max-width: 100%;
-  height: 350px;
-  /* Fixed height to equal project card */
-  padding: 0;
-  position: relative;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  /* Center align items vertically */
+  gap: 30px;
+  flex-wrap: wrap;
+  /* allow wrapping on mobile */
+  height: auto;
+  min-height: 350px;
+  /* Reduced height to fit image better */
+  flex-direction: column;
+  /* Stack image and text vertically */
+  justify-content: center;
+  /* Center content */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  /* Stronger shadow */
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  /* Full visible border */
+  border-radius: 30px;
+  /* Smooth corners */
   overflow: hidden;
-  border-radius: 20px;
-  /* Match others */
-  transition: transform 0.4s ease, border-color 0.3s;
-  background-color: #000;
-  border: 1px solid var(--glass-border);
-  /* Default border */
+  /* smooth clipping */
+  background-repeat: no-repeat;
+  /* prevent tiling */
 }
-
-/* Remove old flex styles as they are no longer needed for the new layout */
 
 .edu-image {
   flex-shrink: 0;
