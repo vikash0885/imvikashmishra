@@ -1215,13 +1215,15 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
-/* GFG Experience Specific Red Shadow */
-.experience-grid .exp-item:first-child .exp-role {
-  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.4);
+/* GFG Card Specific Red Shadow */
+.experience-grid .exp-item:first-child .exp-card {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4), 0 0 40px rgba(255, 0, 0, 0.2);
+  border-color: rgba(255, 0, 0, 0.5);
 }
 
-.experience-grid .exp-item:first-child .exp-org {
-  text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+.experience-grid .exp-item:first-child .exp-card:hover {
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.8), 0 0 60px rgba(255, 0, 0, 0.4);
+  border-color: #ff0000;
 }
 
 .exp-org {
