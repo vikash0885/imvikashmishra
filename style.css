@@ -363,7 +363,7 @@ img {
 }
 
 .hero-desc {
-  max-width: 500px;
+  max-width: 800px;
   color: var(--text-dim);
   margin-bottom: 40px;
   line-height: 1.6;
