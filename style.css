@@ -1215,6 +1215,15 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
+/* GFG Experience Specific Red Shadow */
+.experience-grid .exp-item:first-child .exp-role {
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.experience-grid .exp-item:first-child .exp-org {
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
 .exp-org {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
