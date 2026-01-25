@@ -343,9 +343,11 @@ img {
 .cursor {
   display: inline-block;
   width: 3px;
+  height: 1.2em;
   background-color: var(--accent);
   animation: blink 1s infinite;
   margin-left: 5px;
+  vertical-align: middle;
 }
 
 @keyframes blink {
