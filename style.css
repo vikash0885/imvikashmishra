@@ -273,7 +273,7 @@ img {
 .hero-left h1 {
   /* Massive Typography */
   font-family: var(--font-display);
-  font-size: 7.5vw;
+  font-size: 7vw;
   line-height: 0.9;
   font-weight: 800;
   text-transform: uppercase;
