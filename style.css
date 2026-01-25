@@ -266,13 +266,46 @@ img {
   position: relative;
 }
 
-.hero-text h1 {
+.hero-left h1 {
   /* Massive Typography */
   font-family: var(--font-display);
   font-size: 8vw;
   line-height: 0.9;
   font-weight: 800;
   text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.reveal-text {
+  animation: colorCycle 8s linear infinite;
+  display: inline-block;
+}
+
+@keyframes colorCycle {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+
+  25% {
+    color: #00ffff;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  }
+
+  50% {
+    color: #ff00ff;
+    text-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+  }
+
+  75% {
+    color: #bf00ff;
+    text-shadow: 0 0 15px rgba(191, 0, 255, 0.4);
+  }
+
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
 }
 
 .indented {
@@ -287,25 +320,38 @@ img {
 /* Hover Effect for "MISHRA" (Zoom + Mix Color) */
 .indented:hover {
   transform: scale(1.1);
-  color: transparent;
-  background-image: linear-gradient(to right, #00ffff, #ff00ff, #bf00ff);
+  color: transparent !important;
+  background-image: linear-gradient(45deg, #00ffff, #ff00ff, #00ffff);
+  background-size: 200%;
+  animation: shine 2s linear infinite;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke: 0px;
-  /* Remove stroke to show gradient better */
-  text-shadow: 0 0 30px rgba(191, 0, 255, 0.6);
+  text-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 60px rgba(255, 0, 255, 0.4);
   cursor: pointer;
 }
 
-/* Hover Effect for "VIKASH" (Zoom + Mix Color) */
+/* Hover Effect for "VIKASH" */
 .reveal-text:not(.indented):hover {
   transform: scale(1.1);
-  color: transparent;
-  background-image: linear-gradient(to right, #00ffff, #ff00ff, #bf00ff);
+  color: transparent !important;
+  background-image: linear-gradient(45deg, #00ffff, #ff00ff, #00ffff);
+  background-size: 200%;
+  animation: shine 2s linear infinite;
   -webkit-background-clip: text;
   background-clip: text;
-  text-shadow: 0 0 30px rgba(191, 0, 255, 0.6);
+  text-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 60px rgba(255, 0, 255, 0.4);
   cursor: pointer;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
 }
 
 .typing-container {
