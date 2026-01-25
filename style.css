@@ -1030,9 +1030,29 @@ img {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
-  transition: transform 0.4s ease, border-color 0.3s;
+  transition: all 0.4s ease;
   background-color: #000;
   /* Default background */
+}
+
+.exp-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -200%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  transition: 0s;
+}
+
+.exp-card:hover::after {
+  left: 200%;
+  transition: 0.8s ease-in-out;
 }
 
 .exp-details-below {
