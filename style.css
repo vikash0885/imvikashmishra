@@ -371,7 +371,7 @@ img {
 
 .stylish-bio p {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   color: var(--text-dim);
   margin-bottom: 15px;
