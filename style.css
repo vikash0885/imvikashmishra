@@ -1350,16 +1350,34 @@ img {
 }
 
 .footer-links a {
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  color: #fff;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #888;
+  /* Muted default */
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-.footer-links a:hover {
-  border-bottom: 1px solid var(--primary-accent);
+/* GitHub - Cyan Glow */
+.footer-links a[href*="github"]:hover {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+/* LinkedIn - Blue Glow */
+.footer-links a[href*="linkedin"]:hover {
+  color: #00a0dc;
+  text-shadow: 0 0 10px rgba(0, 160, 220, 0.8), 0 0 20px rgba(0, 160, 220, 0.4);
+}
+
+/* Instagram - Pink Glow */
+.footer-links a[href*="instagram"]:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.4);
 }
 
 /* Contact Form (Right Side) */
