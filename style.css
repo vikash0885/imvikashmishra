@@ -474,8 +474,7 @@ img {
   border-color: #fff;
 }
 
-/* PROFILE RING (RESTORED w/ 70/30) */
-/* UNIQUE PROFILE RING (Cyber/Tech Style) */
+/* UNIQUE PROFILE RING (Modern HUD/Cyber Style) */
 .profile-ring {
   position: relative;
   width: 350px;
@@ -484,39 +483,52 @@ img {
   justify-content: center;
   align-items: center;
   z-index: 10;
+  border-radius: 50%;
+  box-shadow: 0 0 50px rgba(43, 0, 255, 0.1), inset 0 0 20px rgba(100, 255, 218, 0.1);
 }
 
-/* Layer 1: Spinning Colorful Gradient */
+/* Outer Spinning Fragmented HUD */
 .profile-ring::before {
   content: '';
   position: absolute;
-  inset: -10px;
+  inset: -15px;
   border-radius: 50%;
-  background: conic-gradient(transparent, var(--accent), transparent 30%);
-  animation: rotate 4s linear infinite;
-  mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #fff calc(100% - 3px));
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #fff calc(100% - 3px));
+  background: conic-gradient(from 0deg,
+      transparent 0%,
+      var(--secondary-accent) 5%,
+      transparent 10%,
+      transparent 40%,
+      var(--accent) 50%,
+      transparent 60%,
+      transparent 90%,
+      var(--secondary-accent) 95%);
+  animation: rotate 10s linear infinite;
+  mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #fff calc(100% - 2px));
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #fff calc(100% - 2px));
 }
 
-/* Layer 2: Counter-Rotating Dashed Ring */
+/* Precise Inner Glowing Scanner */
 .profile-ring::after {
   content: '';
   position: absolute;
-  inset: -20px;
+  inset: -8px;
   border-radius: 50%;
-  border: 2px dashed rgba(100, 255, 218, 0.3);
-  /* Teal-ish */
-  animation: counterRotate 12s linear infinite;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+  animation: counterRotate 6s linear infinite;
 }
 
-/* Layer 3: Static Pulse Glow */
+/* New Hover Polish: Extra glow + Bracket pop-up */
 .profile-ring .glow-circle {
   position: absolute;
-  inset: 0;
+  inset: -25px;
+  border: 2px solid transparent;
+  border-left-color: var(--secondary-accent);
+  border-right-color: var(--accent);
   border-radius: 50%;
-  box-shadow: 0 0 50px rgba(43, 0, 255, 0.2);
-  animation: pulse 3s ease-in-out infinite;
-  z-index: -1;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+  animation: rotate 15s linear infinite;
 }
 
 .profile-ring .profile-img {
