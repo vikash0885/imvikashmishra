@@ -430,9 +430,15 @@ img {
 }
 
 .btn.primary {
-  background: var(--secondary-accent);
-  color: #000;
-  border-color: var(--secondary-accent);
+  background: linear-gradient(45deg, var(--accent), #4d00ff);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(43, 0, 255, 0.3);
+}
+
+.btn.primary:hover {
+  box-shadow: 0 6px 25px rgba(43, 0, 255, 0.5);
+  transform: translateY(-2px);
 }
 
 .btn.secondary:hover {
