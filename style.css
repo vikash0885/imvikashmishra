@@ -177,24 +177,27 @@ img {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.6rem;
-  /* Cyber-Cool Gradient (Cyan -> Blue -> Purple) */
+  /* Hyper-Prismatic Holographic Gradient */
   background: linear-gradient(120deg,
-      #00f2ff 0%,
-      #0061ff 50%,
-      #bc00ff 100%);
-  background-size: 200% auto;
+      #ffffff 0%,
+      #c0c0c0 20%,
+      #00ffff 40%,
+      #ff00ff 60%,
+      #ffd700 80%,
+      #ffffff 100%);
+  background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: metallicShine 4s linear infinite;
+  animation: chromaticShine 5s linear infinite;
   letter-spacing: 2px;
-  filter: drop-shadow(0 0 5px rgba(0, 97, 255, 0.5));
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.4));
   transition: transform 0.3s ease;
 }
 
 .brand:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0 0 10px rgba(0, 242, 255, 0.7));
+  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.6));
 }
 
 @keyframes chromaticShine {
