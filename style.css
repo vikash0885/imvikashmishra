@@ -1340,17 +1340,38 @@ img {
 
 /* Stylish Typography */
 .exp-role {
-  font-family: 'Syne', sans-serif;
-  /* Stylish font requested */
+  font-family: var(--font-display);
+  font-size: 1.5rem;
   font-weight: 800;
-  font-size: 2rem;
-  line-height: 1.1;
-  margin-top: 10px;
-  background: var(--metallic-platinum);
+  margin-bottom: 5px;
+  /* Premium Liquid Silver Gradient */
+  background: linear-gradient(to bottom,
+      #ffffff 0%,
+      #e8e8e8 30%,
+      #a8a8a8 50%,
+      #666666 51%,
+      #a8a8a8 70%,
+      #ffffff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: metallicShine 4s linear infinite;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
+  animation: metallicShine 5s linear infinite;
+}
+
+font-family: 'Syne',
+sans-serif;
+/* Stylish font requested */
+font-weight: 800;
+font-size: 2rem;
+line-height: 1.1;
+margin-top: 10px;
+background: var(--metallic-platinum);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+animation: metallicShine 4s linear infinite;
 }
 
 /* GFG Card Specific Red Shadow - Softened */
