@@ -503,14 +503,15 @@ img {
 }
 
 .btn.primary {
-  background: linear-gradient(45deg, var(--accent), #4d00ff);
-  color: #fff;
+  background: linear-gradient(45deg, #ccff00, #00ff00);
+  color: #000;
   border: none;
-  box-shadow: 0 4px 15px rgba(43, 0, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(204, 255, 0, 0.3);
+  font-weight: 700;
 }
 
 .btn.primary:hover {
-  box-shadow: 0 6px 25px rgba(43, 0, 255, 0.5);
+  box-shadow: 0 6px 25px rgba(204, 255, 0, 0.5);
   transform: translateY(-2px);
 }
 
