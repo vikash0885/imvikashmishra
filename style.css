@@ -297,6 +297,7 @@ img {
   filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.5));
   animation: metallicShine 4s linear infinite;
   letter-spacing: -2px;
+  overflow: hidden;
 }
 
 /* 4K Anamorphic Shine effect */
