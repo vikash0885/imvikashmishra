@@ -177,6 +177,12 @@ img {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.5rem;
+  background: var(--metallic-platinum);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: metallicShine 4s linear infinite;
+  letter-spacing: 2px;
 }
 
 .nav-links a {
@@ -190,34 +196,24 @@ img {
   position: relative;
 }
 
-/* Unique Colors per Link */
-.nav-item-1:hover {
-  color: #ff0055;
-  text-shadow: 0 0 10px #ff0055;
+.nav-links a:hover {
+  color: var(--accent-blue);
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
 }
 
-/* About - Pink/Red */
-.nav-item-2:hover {
-  color: #00e5ff;
-  text-shadow: 0 0 10px #00e5ff;
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-blue);
+  transition: width 0.3s;
 }
 
-/* Work - Cyan */
-.nav-item-3:hover {
-  color: #f4d03f;
-  text-shadow: 0 0 10px #f4d03f;
-}
-
-/* Skills - Yellow */
-.nav-item-4:hover {
-  color: #bf00ff;
-  text-shadow: 0 0 10px #bf00ff;
-}
-
-/* Experience - Purple */
-.nav-item-5:hover {
-  color: #00ff7f;
-  text-shadow: 0 0 10px #00ff7f;
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 /* Contact - Green */
