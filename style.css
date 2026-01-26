@@ -253,6 +253,17 @@ img {
   background-color: #00e5ff;
 }
 
+/* Education - Orange */
+.nav-item-6:hover {
+  color: #ff7f00;
+  text-shadow: 0 0 15px rgba(255, 127, 0, 0.5);
+}
+
+.nav-item-6:hover::after {
+  width: 100%;
+  background-color: #ff7f00;
+}
+
 /* Skills - Yellow */
 .nav-item-3:hover {
   color: #f4d03f;
