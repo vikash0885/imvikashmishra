@@ -370,92 +370,33 @@ img {
 }
 
 .typing-text {
-  animation: multiColorCycle 15s linear infinite;
   font-weight: 700;
+  background: linear-gradient(to bottom,
+      #ffffff 0%,
+      #ffcc00 40%,
+      #ff9900 50%,
+      #cc6600 60%,
+      #ffcc00 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 2px rgba(255, 204, 0, 0.3));
+  animation: metallicGoldShine 4s linear infinite;
+  position: relative;
+  display: inline-block;
 }
 
-@keyframes multiColorCycle {
+@keyframes metallicGoldShine {
   0% {
-    color: #00ffff;
+    background-position: 0% 50%;
   }
 
-  /* cyan */
-  6.6% {
-    color: #ff00ff;
-  }
-
-  /* magenta */
-  13.3% {
-    color: #00ff00;
-  }
-
-  /* green */
-  20% {
-    color: #ffff00;
-  }
-
-  /* yellow */
-  26.6% {
-    color: #ff7f00;
-  }
-
-  /* orange */
-  33.3% {
-    color: #ff0000;
-  }
-
-  /* red */
-  40% {
-    color: #7f00ff;
-  }
-
-  /* violet */
-  46.6% {
-    color: #007fff;
-  }
-
-  /* sky blue */
-  53.3% {
-    color: #00ff7f;
-  }
-
-  /* spring green */
-  60% {
-    color: #ff007f;
-  }
-
-  /* rose */
-  66.6% {
-    color: #bf00ff;
-  }
-
-  /* purple */
-  73.3% {
-    color: #00aaff;
-  }
-
-  /* azure */
-  80% {
-    color: #ffaa00;
-  }
-
-  /* amber */
-  86.6% {
-    color: #aaff00;
-  }
-
-  /* chartreuse */
-  93.3% {
-    color: #00ffaa;
-  }
-
-  /* aquamarine */
   100% {
-    color: #00ffff;
+    background-position: 200% 50%;
   }
-
-  /* back to cyan */
 }
+
 
 .hero-badge {
   font-family: var(--font-display);
