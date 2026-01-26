@@ -281,36 +281,73 @@ img {
 }
 
 .reveal-text {
-  animation: colorCycle 8s linear infinite;
+  position: relative;
   display: inline-block;
+  background: linear-gradient(to bottom,
+      #ffffff 20%,
+      #e6e6e6 40%,
+      #999999 50%,
+      #4d4d4d 55%,
+      #999999 65%,
+      #ffffff 80%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.5));
+  animation: metallicShine 4s linear infinite;
+  letter-spacing: -2px;
 }
 
-@keyframes colorCycle {
+/* 4K Anamorphic Shine effect */
+.reveal-text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right,
+      transparent,
+      rgba(255, 255, 255, 0.8),
+      transparent);
+  transform: skewX(-25deg);
+  animation: anamorphicShine 4s infinite;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@keyframes metallicShine {
   0% {
-    color: #fff;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  }
-
-  25% {
-    color: #00ffff;
-    text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
-  }
-
-  50% {
-    color: #ff00ff;
-    text-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
-  }
-
-  75% {
-    color: #bf00ff;
-    text-shadow: 0 0 15px rgba(191, 0, 255, 0.4);
+    background-position: 0% 50%;
   }
 
   100% {
-    color: #fff;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    background-position: 200% 50%;
   }
 }
+
+@keyframes anamorphicShine {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    left: 200%;
+    opacity: 1;
+  }
+
+  100% {
+    left: 200%;
+    opacity: 0;
+  }
+}
+
 
 .indented {
   margin-left: 5vw;
