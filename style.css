@@ -1360,19 +1360,6 @@ img {
   animation: metallicShine 5s linear infinite;
 }
 
-font-family: 'Syne',
-sans-serif;
-/* Stylish font requested */
-font-weight: 800;
-font-size: 2rem;
-line-height: 1.1;
-margin-top: 10px;
-background: var(--metallic-platinum);
--webkit-background-clip: text;
-background-clip: text;
-color: transparent;
-animation: metallicShine 4s linear infinite;
-}
 
 /* GFG Card Specific Red Shadow - Softened */
 .experience-grid .exp-item:first-child .exp-card {
