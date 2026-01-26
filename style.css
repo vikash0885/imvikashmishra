@@ -196,11 +196,6 @@ img {
   position: relative;
 }
 
-.nav-links a:hover {
-  color: var(--accent-blue);
-  text-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
-}
-
 .nav-links a::after {
   content: '';
   position: absolute;
@@ -208,12 +203,62 @@ img {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--accent-blue);
-  transition: width 0.3s;
+  transition: width 0.3s, background-color 0.3s;
 }
 
-.nav-links a:hover::after {
+/* About - Pink/Red */
+.nav-item-1:hover {
+  color: #ff0055;
+  text-shadow: 0 0 15px rgba(255, 0, 85, 0.5);
+}
+
+.nav-item-1:hover::after {
   width: 100%;
+  background-color: #ff0055;
+}
+
+/* Work - Cyan */
+.nav-item-2:hover {
+  color: #00e5ff;
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+}
+
+.nav-item-2:hover::after {
+  width: 100%;
+  background-color: #00e5ff;
+}
+
+/* Skills - Yellow */
+.nav-item-3:hover {
+  color: #f4d03f;
+  text-shadow: 0 0 15px rgba(244, 208, 63, 0.5);
+}
+
+.nav-item-3:hover::after {
+  width: 100%;
+  background-color: #f4d03f;
+}
+
+/* Experience - Purple */
+.nav-item-4:hover {
+  color: #bf00ff;
+  text-shadow: 0 0 15px rgba(191, 0, 255, 0.5);
+}
+
+.nav-item-4:hover::after {
+  width: 100%;
+  background-color: #bf00ff;
+}
+
+/* Contact - Green */
+.nav-item-5:hover {
+  color: #00ff7f;
+  text-shadow: 0 0 15px rgba(0, 255, 127, 0.5);
+}
+
+.nav-item-5:hover::after {
+  width: 100%;
+  background-color: #00ff7f;
 }
 
 /* Contact - Green */
