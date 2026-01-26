@@ -1,24 +1,24 @@
 /* RESET & CORE */
 :root {
-  /* Hybrid Palette: Dark Navy + Void Black */
-  --bg: #0a1018;
-  /* Deep hybrid background */
-  --text: #e0e0e0;
-  --text-dim: #8892b0;
-  --accent: #2b00ff;
-  /* Electric Blue */
-  --secondary-accent: #64ffda;
-  /* Teal from previous */
+  /* Premium 4K HD Palette */
+  --bg: #050505;
+  --text: #ffffff;
+  --text-dim: #999999;
+
+  /* Metallic Gradients */
+  --metallic-platinum: linear-gradient(to bottom, #ffffff 20%, #e6e6e6 40%, #999999 50%, #4d4d4d 55%, #999999 65%, #ffffff 80%);
+  --metallic-gold: linear-gradient(to bottom, #ffffff 0%, #ffcc00 40%, #ff9900 50%, #cc6600 60%, #ffcc00 100%);
+
+  /* Brand Colors */
+  --accent-blue: #3b82f6;
+  --accent-lime: #ccff00;
 
   --font-display: 'Syne', sans-serif;
   --font-body: 'Inter', sans-serif;
 
-  /* Glassmorphism Variables */
+  /* Glassmorphism */
   --glass-bg: rgba(255, 255, 255, 0.03);
-  --glass-border: rgba(255, 255, 255, 0.05);
-
-  /* Particle Colors */
-  --particle-color: rgba(100, 255, 218, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.08);
 }
 
 * {
@@ -664,12 +664,20 @@ img {
 /* SECTIONS Shared */
 .section-header {
   font-family: var(--font-display);
-  font-size: 1rem;
-  letter-spacing: 2px;
-  color: var(--text-dim);
-  border-bottom: 1px solid var(--glass-border);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background: var(--metallic-platinum);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-bottom: 2px solid var(--glass-border);
   padding-bottom: 20px;
   margin-bottom: 60px;
+  display: inline-block;
+  animation: metallicShine 4s linear infinite;
 }
 
 .skills,
