@@ -457,24 +457,46 @@ img {
   line-height: 1.6;
 }
 
-.stylish-bio p {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: var(--text-dim);
-  margin-bottom: 15px;
-}
-
 .stylish-bio {
   font-family: 'Playfair Display', serif;
-  /* Stylish Serif Font */
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-style: italic;
-  color: var(--text);
-  margin-top: 30px;
-  /* Space from buttons above */
-  border-left: 2px solid var(--secondary-accent);
-  padding-left: 20px;
+  font-weight: 500;
+  color: var(--text-dim);
+  margin-top: 40px;
+  border-left: 3px solid #3b82f6;
+  /* Modern blue border */
+  padding-left: 25px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: revealBio 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.8s;
+}
+
+.stylish-bio p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+}
+
+.stylish-bio .accent {
+  color: #3b82f6;
+  /* Vibrant Blue */
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+  font-style: normal;
+  /* Keep keywords readable */
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes revealBio {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .stylish-bio .accent {
