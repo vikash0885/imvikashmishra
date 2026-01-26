@@ -1077,19 +1077,23 @@ img {
 .edu-year {
   display: block;
   font-family: var(--font-display);
-  /* Stylish font */
   font-size: 1.1rem;
   letter-spacing: 1px;
-  color: var(--secondary-accent);
+  color: #3b82f6;
+  /* Modern Blue */
   margin-bottom: 5px;
+  font-weight: 700;
 }
 
 .edu-details h3 {
   font-family: var(--font-display);
-  /* Stylish font */
   font-size: 1.5rem;
   margin: 10px 0;
-  color: #fff;
+  background: var(--metallic-platinum);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: metallicShine 4s linear infinite;
 }
 
 .edu-inst {
@@ -1237,10 +1241,11 @@ img {
   font-size: 2rem;
   line-height: 1.1;
   margin-top: 10px;
-  background: linear-gradient(90deg, #fff, #aaa);
+  background: var(--metallic-platinum);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: metallicShine 4s linear infinite;
 }
 
 /* GFG Card Specific Red Shadow */
@@ -1257,7 +1262,9 @@ img {
 .exp-org {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
-  color: var(--secondary-accent);
+  color: #3b82f6;
+  /* Modern Blue */
+  font-weight: 700;
   margin-top: 5px;
   text-transform: uppercase;
   letter-spacing: 2px;
