@@ -264,17 +264,27 @@ img {
 /* Contact - Green */
 
 .repo-btn {
-  padding: 8px 20px;
-  background: transparent;
-  border: 1px solid var(--glass-border);
+  padding: 10px 24px;
+  background: #24292e;
+  /* GitHub Dark */
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
-  cursor: none;
-  font-family: var(--font-body);
-  transition: all 0.3s;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .repo-btn:hover {
-  border-color: var(--secondary-accent);
+  background: #2ea44f;
+  /* GitHub Green */
+  border-color: #2ea44f;
+  box-shadow: 0 0 20px rgba(46, 164, 79, 0.5);
+  transform: translateY(-2px) scale(1.05);
 }
 
 /* HAMBURGER MENU */
