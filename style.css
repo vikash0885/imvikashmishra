@@ -1412,6 +1412,21 @@ img {
   transform: rotate(0deg) scale(1.1);
 }
 
+/* Education Card Fix */
+.edu-card {
+  border-radius: 20px !important;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.edu-card:hover {
+  border-color: var(--accent-blue) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2);
+}
+
 .contact-footer {
   padding: 100px 60px;
   border-top: 1px solid var(--glass-border);
