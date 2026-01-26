@@ -458,15 +458,30 @@ img {
   font-size: 1.25rem;
   font-style: italic;
   font-weight: 500;
-  color: var(--text-dim);
+  /* Luminous Cyber-Metallic finish */
+  background: linear-gradient(90deg,
+      #ffffff 0%,
+      #a5dcfd 25%,
+      #ffffff 50%,
+      #a5dcfd 75%,
+      #ffffff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   margin-top: 40px;
   border-left: 3px solid #3b82f6;
-  /* Modern blue border */
   padding-left: 25px;
   opacity: 0;
   transform: translateY(20px);
-  animation: revealBio 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  animation-delay: 0.8s;
+  animation: revealBio 1s cubic-bezier(0.4, 0, 0.2, 1) forwards, metallicShine 8s linear infinite;
+  animation-delay: 0.8s, 0s;
+  text-shadow: 0 0 1px rgba(165, 220, 253, 0.2);
+  transition: filter 0.3s ease;
+}
+
+.stylish-bio:hover {
+  filter: brightness(1.2) drop-shadow(0 0 5px rgba(165, 220, 253, 0.4));
 }
 
 .stylish-bio p {
@@ -477,15 +492,14 @@ img {
 
 .stylish-bio .accent {
   color: #3b82f6;
-  /* Vibrant Blue */
   font-weight: 700;
-  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
   font-style: normal;
-  /* Keep keywords readable */
-  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(90deg, #00d2ff, #3b82f6, #9d50bb);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+  position: relative;
 }
 
 @keyframes revealBio {
