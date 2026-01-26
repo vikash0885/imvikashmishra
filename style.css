@@ -416,10 +416,7 @@ img {
   margin-right: 10px;
 }
 
-.typing-text {
-  color: var(--secondary-accent);
-  text-shadow: 0 0 5px var(--accent);
-}
+
 
 .cursor {
   display: inline-block;
