@@ -1750,10 +1750,17 @@ img {
 /* Site Footer */
 .site-footer {
   text-align: center;
-  padding: 20px;
-  color: #ff6b6b;
-  font-family: 'Inter', sans-serif;
+  padding: 40px 20px;
+  background: var(--metallic-platinum);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: var(--font-display);
+  font-weight: 700;
   font-size: 0.9rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  margin-top: 40px;
+  letter-spacing: 1px;
+  border-top: 1px solid var(--glass-border);
+  margin-top: 60px;
+  animation: metallicShine 4s linear infinite;
+  opacity: 0.8;
 }
