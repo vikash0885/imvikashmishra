@@ -176,13 +176,38 @@ img {
 .brand {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.5rem;
-  background: var(--metallic-platinum);
+  font-size: 1.6rem;
+  /* Hyper-Prismatic Holographic Gradient */
+  background: linear-gradient(120deg,
+      #ffffff 0%,
+      #c0c0c0 20%,
+      #00ffff 40%,
+      #ff00ff 60%,
+      #ffd700 80%,
+      #ffffff 100%);
+  background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: metallicShine 4s linear infinite;
+  animation: chromaticShine 5s linear infinite;
   letter-spacing: 2px;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.4));
+  transition: transform 0.3s ease;
+}
+
+.brand:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.6));
+}
+
+@keyframes chromaticShine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .nav-links a {
