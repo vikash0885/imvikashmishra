@@ -365,8 +365,17 @@ img {
   margin: 20px 0 10px 0;
   font-family: 'Share Tech Mono', monospace;
   /* Tech feel */
-  color: var(--secondary-accent);
+  background: linear-gradient(to bottom,
+      #ffffff 0%,
+      #ffcc00 40%,
+      #ff9900 50%,
+      #cc6600 60%,
+      #ffcc00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   min-height: 1.8rem;
+  display: block;
 }
 
 .typing-text {
